@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat&family=Playfair:opsz,wght@5..1200,300&family=Trirong:wght@300&display=swap");
+
+.navbar-container {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  background-color: rgba(27, 36, 47, 255);
+  padding: 15px;
+  border-bottom: solid 4px #04c2c9;
+  font-family: "Bungee", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair", serif;
+  font-family: "Trirong", serif;
+}
+
+.navbar-container h3 {
+  margin: 0px 40px;
+  transition: all 0.2s ease-in;
+}
+
+.navbar-container h3:hover {
+  color: #e31b6d;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-container h3 {
+    margin: 0 10px;
+    font-size: 12pt;
+  }
+}
