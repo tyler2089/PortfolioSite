@@ -1,9 +1,10 @@
 import "./about.css";
 import Slide from "react-reveal/Slide";
 import Flip from "react-reveal/Flip";
+import Fade from "react-reveal/Fade";
 function About() {
   return (
-    <div className="about-container">
+    <div className="about-container" id="about">
       {/* React Reveal Library! */}
       <Slide right>
         <h1 id="about-title">ABOUT</h1>
@@ -36,18 +37,20 @@ function About() {
       </Flip>
 
       <section className="headshot-section">
-        <Slide left cascade>
+        <Fade left>
           <div className="headshot-container">
-            <img src={require("./tyler.jpeg")}></img>
+            <img src={require("./profilepicture.jpg")}></img>
             <h2>Who's this guy?</h2>
             <p>
               Hello, I'm Tyler. I'm a full-stack developer in Tacoma, WA. I have
               a serious passion for web development and user experiences.
             </p>
-            <p id="link">Let's make something special together.</p>
+            <p id="link">
+              <a href="#contact">Let's make something special together.</a>
+            </p>
           </div>
-        </Slide>
-        <Slide right>
+        </Fade>
+        <Fade right>
           <div className="skills-container">
             <h2>HTML</h2>
             <h2>CSS</h2>
@@ -56,7 +59,7 @@ function About() {
             <h2>Redux</h2>
             <h2>Node.js</h2>
           </div>
-        </Slide>
+        </Fade>
       </section>
     </div>
   );

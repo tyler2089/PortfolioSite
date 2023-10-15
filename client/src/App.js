@@ -4,6 +4,7 @@ import { CanvasSpace, Pt, Line, Group, Tempo } from "pts";
 import Navbar from "./navbar.js";
 import About from "./about.js";
 import Projects from "./projects.js";
+import Contact from "./contact";
 // Canvas Space Initialization and Styling
 let space = new CanvasSpace("canvas");
 let form = space.getForm();
@@ -85,7 +86,9 @@ function App() {
         </h1>
         <h1>I'm a full-stack web developer.</h1>
         <div className="button">
-          View My Work <span className="arrow">&#8594;</span>
+          <a href="#projects">
+            View My Work <span className="arrow">&#8594;</span>
+          </a>
         </div>
       </div>
 
@@ -97,6 +100,9 @@ function App() {
 
       {/* Projects */}
       <Projects></Projects>
+
+      {/* Contact */}
+      <Contact></Contact>
     </div>
   );
 }

@@ -1,0 +1,99 @@
+.contact-container {
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: #252934;
+}
+
+.contact-container h1 {
+  text-align: center;
+  font-size: 3em;
+  text-decoration: underline;
+  color: white;
+  margin: 30px 0px;
+}
+
+.contact-container h3 {
+  text-align: center;
+  margin: 30px 0px;
+  color: #04c2c9;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  height: 40%;
+  margin: 30px 0px;
+  justify-content: space-around;
+}
+
+.contact-form input {
+  width: 30%;
+  height: 2em;
+  margin: 2px;
+  color: white;
+  background-color: #1e242c;
+  border: none;
+  padding: 5px;
+  transition: all 0.2s ease-in;
+}
+
+.contact-form textarea {
+  width: 30%;
+  height: 250px;
+  color: white;
+  background-color: #1e242c;
+  border: none;
+  padding: 5px;
+  transition: all 0.2s ease-in;
+  resize: none;
+}
+
+.input:focus {
+  background-color: #333d49;
+}
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+}
+
+.submit-button {
+  background-color: #252934;
+  text-align: center;
+  margin: 30px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.submit-button h2 {
+  border: 2px solid #04c2c9;
+  width: 10%;
+  padding: 5px 10px;
+  color: #04c2c9;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.submit-button h2:hover {
+  background-color: #04c2c9;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-form {
+    height: 50%;
+  }
+  .contact-form input {
+    width: 90%;
+  }
+
+  .contact-form textarea {
+    width: 90%;
+  }
+
+  .submit-button h2 {
+    width: 30%;
+  }
+}
