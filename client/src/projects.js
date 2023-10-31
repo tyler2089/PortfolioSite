@@ -96,7 +96,13 @@ function Projects() {
           </p>
         </div>
         <div className="modal-buttons">
-          <h2>View Site</h2>
+          <h2>
+            <a href="https://tyler2089.github.io/HarmonyHub/">View Site</a>
+          </h2>
+
+          <h2>
+            <a href="https://github.com/tyler2089/HarmonyHub">View Github</a>
+          </h2>
           <h2
             onClick={() => {
               modalRef.current.className = "not-modal";

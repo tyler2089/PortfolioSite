@@ -85,11 +85,11 @@ function App() {
           Hello, I'm <span className="highlight">Tyler Purbaugh</span>.
         </h1>
         <h1>I'm a full-stack web developer.</h1>
-        <div className="button">
-          <a href="#projects">
+        <a href="#about">
+          <div className="button">
             View My Work <span className="arrow">&#8594;</span>
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
 
       {/* Navbar */}
